@@ -6,14 +6,8 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface StudentRepository extends CrudRepository<Student,String >
+public interface StudentRepository extends CrudRepository<Student,Integer >
 {
-     Optional<Student> saveStudent(Student student);
-
-     List<Student> getAllStudent();
-
-     Optional<Student> getStudentById(Integer stdNo);
-
 
 
 
